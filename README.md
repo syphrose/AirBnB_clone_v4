@@ -139,6 +139,12 @@ Import JQuery
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
+Before starting the project…
+You will work on a codebase using Flasgger, you will need to install it locally first before starting the RestAPI:
+
+$ sudo apt-get install -y python3-lxml
+$ sudo pip3 install flask_cors # if it was not installed yet
+$ sudo pip3 install flasgger
 
 Documented commands (type help <topic>):
 ========================================
