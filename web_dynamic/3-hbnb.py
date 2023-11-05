@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """ Starts a Flash Web Application """
 from models import storage
 from models.state import State
@@ -16,11 +15,11 @@ app = Flask(__name__)
 
 @app.teardown_appcontext
 def close_db(error):
-    """ Remove the current SQLAlchemy Session """
+    """ Delete the current SQLAlchemy Session """
     storage.close()
 
 
-@app.route('/2-hbnb/', strict_slashes=False)
+@app.route('/3-hbnb/', strict_slashes=False)
 def hbnb():
     """ HBNB """
     states = storage.all(State).values()
@@ -38,7 +37,7 @@ def hbnb():
 
     cache_id = str(uuid4())
 
-    return render_template('2-hbnb.html',
+    return render_template('3-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
                            places=places,
