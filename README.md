@@ -132,6 +132,14 @@ TestBaseModel class:
 vagrantAirBnB_clone$./console.py
 (hbnb) help
 
+
+More Info on the handling of the project
+Import JQuery
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+
 Documented commands (type help <topic>):
 ========================================
 EOF  all  create  destroy  help  quit  show  update
